@@ -270,6 +270,15 @@ func InitProcess() {
 
 			runPath = filepath.Join(path, fmt.Sprintf("qtbox%v", ending))
 			println("looking for qtbox in:", runPath)
+			if _, err := os.Stat(runPath); err == nil {
+				break
+			}
+
+			runPath = filepath.Join(path, fmt.Sprintf("qtbox/qtbox%v", ending))
+			println("looking for qtbox in:", runPath)
+			if _, err := os.Stat(runPath); err == nil {
+				break
+			}
 
 			if strings.HasPrefix(runPath, "/private/var/folders/") { //app is quarantined on macOS
 				runPath = filepath.Join(os.TempDir(), "qtbox")
