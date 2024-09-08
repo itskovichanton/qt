@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-	"github.com/therecipe/qt/widgets"
+	"github.com/itskovichanton/qt/widgets"
 
-	"github.com/therecipe/qt/internal/examples/uitools/calculator/ui"
+	"github.com/itskovichanton/qt/internal/examples/uitools/calculator/ui"
 )
 
 func main() {

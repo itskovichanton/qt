@@ -4,10 +4,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/therecipe/qt/core"
-	"github.com/therecipe/qt/sql"
-	"github.com/therecipe/qt/widgets"
-	"github.com/therecipe/qt/xml"
+	"github.com/itskovichanton/qt/core"
+	"github.com/itskovichanton/qt/sql"
+	"github.com/itskovichanton/qt/widgets"
+	"github.com/itskovichanton/qt/xml"
 )
 
 var uniqueArtistId int

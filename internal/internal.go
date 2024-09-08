@@ -329,7 +329,7 @@ func InitProcess() {
 				return nil
 			}
 
-			dlpath := fmt.Sprintf("https://github.com/therecipe/box/releases/download/v0.0.0/%v_%v_%v_%v_%v.zip", runtime.GOOS, runtime.GOARCH, "513", "full", "http")
+			dlpath := fmt.Sprintf("https://github.com/itskovichanton/box/releases/download/v0.0.0/%v_%v_%v_%v_%v.zip", runtime.GOOS, runtime.GOARCH, "513", "full", "http")
 			if Config.DownloadUrl != "" {
 				dlpath = Config.DownloadUrl
 			}

@@ -17,8 +17,8 @@ package qzxing
 */
 import "C"
 import (
-	"github.com/therecipe/qt/core"
-	"github.com/therecipe/qt/qml"
+	"github.com/itskovichanton/qt/core"
+	"github.com/itskovichanton/qt/qml"
 )
 
 type stub struct{ core.QObject } //needed to make QtCore available to qzxing/src/QZXing.h

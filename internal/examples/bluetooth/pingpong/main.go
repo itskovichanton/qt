@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-	"github.com/therecipe/qt/core"
-	"github.com/therecipe/qt/gui"
-	"github.com/therecipe/qt/qml"
+	"github.com/itskovichanton/qt/core"
+	"github.com/itskovichanton/qt/gui"
+	"github.com/itskovichanton/qt/qml"
 )
 
 func main() {

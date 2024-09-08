@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/therecipe/qt/core"
-	"github.com/therecipe/qt/widgets"
+	"github.com/itskovichanton/qt/core"
+	"github.com/itskovichanton/qt/widgets"
 )
 
 func layouts() {

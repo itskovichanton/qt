@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/therecipe/qt/core"
-	"github.com/therecipe/qt/gui"
-	"github.com/therecipe/qt/sql"
-	"github.com/therecipe/qt/widgets"
-	"github.com/therecipe/qt/xml"
+	"github.com/itskovichanton/qt/core"
+	"github.com/itskovichanton/qt/gui"
+	"github.com/itskovichanton/qt/sql"
+	"github.com/itskovichanton/qt/widgets"
+	"github.com/itskovichanton/qt/xml"
 )
 
 type MainWindow struct {

@@ -1,11 +1,12 @@
+//go:build !minimal
 // +build !minimal
 
 package uitools
 
 import (
-	"github.com/therecipe/qt/core"
-	"github.com/therecipe/qt/internal"
-	"github.com/therecipe/qt/widgets"
+	"github.com/itskovichanton/qt/core"
+	"github.com/itskovichanton/qt/internal"
+	"github.com/itskovichanton/qt/widgets"
 	"unsafe"
 )
 

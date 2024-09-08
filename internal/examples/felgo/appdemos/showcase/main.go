@@ -4,12 +4,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/therecipe/qt/core"
-	"github.com/therecipe/qt/felgo"
-	"github.com/therecipe/qt/qml"
-	"github.com/therecipe/qt/quickcontrols2"
-	"github.com/therecipe/qt/webview"
-	"github.com/therecipe/qt/widgets"
+	"github.com/itskovichanton/qt/core"
+	"github.com/itskovichanton/qt/felgo"
+	"github.com/itskovichanton/qt/qml"
+	"github.com/itskovichanton/qt/quickcontrols2"
+	"github.com/itskovichanton/qt/webview"
+	"github.com/itskovichanton/qt/widgets"
 )
 
 func main() {

@@ -10,8 +10,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/therecipe/qt/internal/cmd/rcc"
-	"github.com/therecipe/qt/internal/utils"
+	"github.com/itskovichanton/qt/internal/cmd/rcc"
+	"github.com/itskovichanton/qt/internal/utils"
 )
 
 //linux

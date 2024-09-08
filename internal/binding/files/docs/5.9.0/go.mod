@@ -1,1 +1,1 @@
-module github.com/therecipe/qt/internal/binding/files/docs/5.9.0
+module github.com/itskovichanton/qt/internal/binding/files/docs/5.9.0

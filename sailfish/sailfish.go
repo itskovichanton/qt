@@ -1,12 +1,13 @@
+//go:build !sailfish && !sailfish_emulator
 // +build !sailfish,!sailfish_emulator
 
 package sailfish
 
 import (
-	"github.com/therecipe/qt/core"
-	"github.com/therecipe/qt/gui"
-	"github.com/therecipe/qt/internal"
-	"github.com/therecipe/qt/quick"
+	"github.com/itskovichanton/qt/core"
+	"github.com/itskovichanton/qt/gui"
+	"github.com/itskovichanton/qt/internal"
+	"github.com/itskovichanton/qt/quick"
 	"unsafe"
 )
 

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker save therecipe/qt:darwin | gzip -n > darwin.tar.gz
+docker save itskovichanton/qt:darwin | gzip -n > darwin.tar.gz

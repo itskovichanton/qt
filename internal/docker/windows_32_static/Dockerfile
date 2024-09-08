@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-LABEL maintainer therecipe
+LABEL maintainer itskovichanton
 
 ENV USER user
 ENV HOME /home/$USER
@@ -10,15 +10,15 @@ ENV QT_MXE true
 ENV QT_MXE_ARCH 386
 ENV QT_MXE_STATIC true
 
-COPY --from=therecipe/qt:linux /usr/local/go /usr/local/go
-COPY --from=therecipe/qt:linux $GOPATH/bin $GOPATH/bin
-COPY --from=therecipe/qt:linux $GOPATH/src/github.com/therecipe/qt $GOPATH/src/github.com/therecipe/qt
-COPY --from=therecipe/qt:windows_32_static_base /usr/lib/mxe /usr/lib/mxe
+COPY --from=itskovichanton/qt:linux /usr/local/go /usr/local/go
+COPY --from=itskovichanton/qt:linux $GOPATH/bin $GOPATH/bin
+COPY --from=itskovichanton/qt:linux $GOPATH/src/github.com/itskovichanton/qt $GOPATH/src/github.com/itskovichanton/qt
+COPY --from=itskovichanton/qt:windows_32_static_base /usr/lib/mxe /usr/lib/mxe
 
 RUN $GOPATH/bin/qtsetup prep
 RUN $GOPATH/bin/qtsetup check windows
 RUN $GOPATH/bin/qtsetup generate windows
 RUN $GOPATH/bin/qtsetup install windows
-RUN cd $GOPATH/src/github.com/therecipe/qt/internal/examples/widgets/line_edits && $GOPATH/bin/qtdeploy build windows && rm -rf ./deploy
+RUN cd $GOPATH/src/github.com/itskovichanton/qt/internal/examples/widgets/line_edits && $GOPATH/bin/qtdeploy build windows && rm -rf ./deploy
 
 RUN apt-get -qq update && apt-get --no-install-recommends -qq -y install ca-certificates git pkg-config
