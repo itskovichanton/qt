@@ -258,6 +258,8 @@ func InitProcess() {
 		var ending string
 		if runtime.GOOS == "windows" {
 			ending = ".exe"
+		} else {
+			runPath = "qtbox"
 		}
 
 		pwd, _ := os.Getwd()
@@ -304,6 +306,11 @@ func InitProcess() {
 		}
 
 		println("final qtbox location:", runPath)
+
+		if runtime.GOOS != "windows" {
+			runPath = "qtbox"
+			_, err = os.Stat(runPath)
+		}
 
 		if Config.Override || (err != nil && errF != nil) {
 
@@ -399,12 +406,17 @@ func InitProcess() {
 		runPath = Config.Path
 	}
 
+	if runtime.GOOS != "windows" {
+		runPath = "./" + runPath
+	}
 	process := exec.Command(runPath)
 	rc, err := process.StderrPipe()
 	if err != nil {
 		println(err.Error())
 	}
-	process.Start()
+	if err = process.Start(); err != nil {
+		println(err.Error())
+	}
 
 	time.Sleep(3 * time.Second) //TODO:
 
